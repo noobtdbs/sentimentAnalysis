@@ -1,0 +1,109 @@
+/* src/App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+  
+  
+  
+}
+
+h1 {
+  /* color: #000; */
+  margin-bottom: 40px;
+}
+
+/* Review Container */
+.review-container {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Review Header */
+.review-header {
+  display: flex;
+  align-items: center;
+}
+
+.review-header img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.review-header h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.review-header .star-rating {
+  color: #FFD700;
+  margin-right: 10px;
+}
+
+.review-header .star-rating span {
+  font-size: 18px;
+}
+
+.review-header span {
+  font-size: 14px;
+  color: #FFD700;
+}
+
+/* Review Content */
+.review-container p {
+  margin-top: 15px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* Tooltip */
+.tooltip-wrapper {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  top: -5px;
+  left: 105%;
+  background-color: #333;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  z-index: 1;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.tooltip-wrapper .tooltip:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -5px;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #333 transparent transparent;
+}
